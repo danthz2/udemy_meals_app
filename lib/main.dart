@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:udemy_meals_app/screens/categories_screen.dart';
 import 'package:udemy_meals_app/screens/category_meals_screen.dart';
 import 'package:udemy_meals_app/screens/meal_detail_screen.dart';
+import 'package:udemy_meals_app/screens/tabs_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
       // home: const CategoriesScreen(),
       initialRoute: '/',
       routes: {
-        '/': (context) => CategoriesScreen(),
+        '/': (context) => TabsScreen(),
         CategoryMealsScreen.routName: (context) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (context) => MealDetailScreen(),
       },
