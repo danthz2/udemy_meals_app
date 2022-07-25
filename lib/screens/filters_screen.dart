@@ -48,12 +48,14 @@ class _FiltersScreenState extends State<FiltersScreen> {
         actions: [
           IconButton(
             onPressed: () {
+              //Mengubah Status dari Switch Filternya, Ditampung di Map Selected Filters
               final selectedFilters = {
                 'gluten': _glutenFree,
                 'lactose': _lactoseFree,
                 'vegan': _vegan,
                 'vegetarian': _vegetarian,
               };
+              // Menyimpan Data ke Variabel Save Filter
               widget.saveFilters(selectedFilters);
             },
             icon: Icon(Icons.save),
